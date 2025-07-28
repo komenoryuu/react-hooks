@@ -1,9 +1,12 @@
+import { useViewportSize } from './hooks'
 import './App.css'
 
 function App() {
+	const { height, width } = useViewportSize()
+
 	return (
 		<>
-			<div>Vite + React</div>
+			Width: {width}, height: {height}
 		</>
 	)
 }
